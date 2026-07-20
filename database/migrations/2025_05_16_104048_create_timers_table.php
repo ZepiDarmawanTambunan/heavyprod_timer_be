@@ -36,6 +36,7 @@ return new class extends Migration
             $table->double('swell_factor')->default(0.0);
             $table->double('density')->default(0.0);
             $table->boolean('direct_excavation')->default(true);
+            $table->double('correction_factor')->default(1.0);
 
             // Total
             $table->integer('total_cycle')->default(1);

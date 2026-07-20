@@ -41,6 +41,7 @@ class PcExcaApiController extends Controller
                 'fuel_consumption' => 'required|numeric|max:255',
                 'density' => 'required|numeric|max:255',
                 'direct_excavation' => 'required|boolean',
+                'correction_factor' => 'required|numeric',
 
                 'total_plan_sw45' => 'nullable|numeric',
                 'primary_work_plan_sw45' => 'nullable|numeric',
@@ -133,6 +134,7 @@ class PcExcaApiController extends Controller
                 'fuel_consumption' => 'required|numeric|max:255',
                 'density' => 'required|numeric|max:255',
                 'direct_excavation' => 'required|boolean',
+                'correction_factor' => 'required|numeric',
 
                 'total_plan_sw45' => 'nullable|numeric',
                 'primary_work_plan_sw45' => 'nullable|numeric',

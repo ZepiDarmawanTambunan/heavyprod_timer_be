@@ -34,6 +34,7 @@ class Timer extends Model
         'swell_factor',
         'density',
         'direct_excavation',
+        'correction_factor',
 
         // Total
         'total_cycle',

@@ -20,6 +20,7 @@ class PcExca extends Model
         'fuel_consumption',
         'density',
         'direct_excavation',
+        'correction_factor',
 
         'total_plan_sw45',
         'primary_work_plan_sw45',

@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('uuid')->unique();
             $table->string('timer_uuid');
+
             $table->integer('cycle_number')->nullable();
             $table->string('hauler_label');
             $table->dateTime('created_at')->nullable();
+
             $table->foreign('timer_uuid')->references('uuid')->on('timers')->onDelete('cascade');
         });
     }

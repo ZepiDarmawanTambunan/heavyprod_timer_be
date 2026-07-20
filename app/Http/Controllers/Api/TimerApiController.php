@@ -31,7 +31,13 @@ class TimerApiController extends Controller
     public function show($uuid)
     {
         try {
-            $timer = Timer::with(['user', 'pcExca', 'detailTimer', 'haulerLog'])->where('uuid', $uuid)->first();
+            $timer = Timer::with([
+                'user',
+                'pcExca',
+                'detailTimer',
+                'haulerLog',
+                'fillFactorTimer'
+            ])->where('uuid', $uuid)->first();
 
             if (!$timer) {
                 return response()->json([
@@ -81,6 +87,7 @@ class TimerApiController extends Controller
                 'swell_factor' => 'required|numeric',
                 'density' => 'required|numeric',
                 'direct_excavation' => 'required|boolean',
+                'correction_factor' => 'required|numeric',
 
                 // Total
                 'total_cycle' => 'required|integer',

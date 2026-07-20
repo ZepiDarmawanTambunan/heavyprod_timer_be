@@ -24,6 +24,7 @@ class PcExcaSeeder extends Seeder
             'fuel_consumption' => 45.0,      // contoh konsumsi bahan bakar (liter/jam)
             'density' => 1.8,               // contoh density (ton/m3)
             'direct_excavation' => true,    // contoh boolean
+            'correction_factor' => 1.0,     // contoh nilai correction factor
 
             'total_plan_sw45' => 0.0,
             'primary_work_plan_sw45' => 25.00,

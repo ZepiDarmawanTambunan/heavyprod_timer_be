@@ -22,6 +22,7 @@ return new class extends Migration
             $table->double('fuel_consumption')->default(0.0);
             $table->double('density')->default(0.0);
             $table->boolean('direct_excavation')->default(true);
+            $table->double('correction_factor')->default(1.0);
 
             $table->double('total_plan_sw45')->default(0.0);
             $table->double('primary_work_plan_sw45')->default(0.0);
