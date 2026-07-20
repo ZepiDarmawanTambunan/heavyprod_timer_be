@@ -71,7 +71,7 @@ class TimerApiController extends Controller
                 'job_site' => 'nullable|string',
                 'user' => 'required|string',
                 'fill_factor' => 'required|numeric',
-                'hauler_quantity' => 'nullable|integer',
+                'hauler_quantity' => 'required|integer',
 
                 // PCEXCA
                 'pc_exca' => 'required|string',

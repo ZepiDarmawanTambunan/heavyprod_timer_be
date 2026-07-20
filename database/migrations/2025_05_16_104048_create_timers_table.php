@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('timers', function (Blueprint $table) {
             $table->id();
             $table->string('uuid')->unique();
-            $table->string('user_uuid')->nullable();
-            $table->string('pc_exca_uuid')->nullable();
+            $table->string('user_uuid');
+            $table->string('pc_exca_uuid');
 
-            // TIMEc
+            // TIME
             $table->dateTime('start_time');
             $table->dateTime('stop_time');
             $table->date('tgl');
@@ -25,13 +25,13 @@ return new class extends Migration
             // GENERAL
             $table->string('job_site')->nullable();
             $table->string('user');
-            $table->integer('hauler_quantity')->default(0);
             $table->double('fill_factor')->default(0.0);
+            $table->integer('hauler_quantity')->default(0);
 
             // PCEXCA
             $table->string('pc_exca');
             $table->string('model');
-            $table->double('ct_45')->default(0clear.0);
+            $table->double('ct_45')->default(0.0);
             $table->double('bucket_cap')->default(0.0);
             $table->double('swell_factor')->default(0.0);
             $table->double('density')->default(0.0);
