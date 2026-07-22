@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('timers', function (Blueprint $table) {
             $table->id();
             $table->string('uuid')->unique();
-            $table->string('user_uuid');
-            $table->string('pc_exca_uuid');
+            $table->string('user_uuid')->nullable();
+            $table->string('pc_exca_uuid')->nullable();
 
             // TIME
             $table->dateTime('start_time');
